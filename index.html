@@ -8,15 +8,48 @@
     <title>TailwindCSS Boilerplate</title>
 </head>
 
-<body class="bg-gradient-to-bl from-purple-400 to-zinc-500 h-screen">
-    <section class="container mx-auto pt-20">
-        <h1 class="text-white text-3xl text-center">
-            <p class="mb-8">Vite + Tailwind CSS + Awesomeness</p>
-        </h1>
-        <div class="mx-auto text-center">
-            <a href='https://github.com/hasinhayder/tailwind-boilerplate' class=" text-white bg-cyan-500 font-semibold border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Download</a>
-            <a target="_blank" href='https://github.com/hasinhayder' class="ml-4 text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Don't Click</a>
+<body class="bg-dark-blue h-screen">
+    <header class="container flex justify-between items-center h-[96px]">
+        <img src="/images/logo.png" alt="logo">
+        <nav>
+            <ul class="flex gap-8">
+                <li>
+                    <a href="" class="text-white">Home</a>
+                </li>
+                <li>
+                    <a href="" class="text-slate-500">About</a>
+                </li>
+                <li>
+                    <a href="" class="text-slate-500">Features</a>
+                </li>
+                <li>
+                    <a href="" class="text-slate-500">Pricing</a>
+                </li>
+                <li>
+                    <a href="" class="text-slate-500">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        <button>
+            <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Get a demo</a>
+        </button>
+    </header>
+    <section class="text-center py-16 flex flex-col gap-8 items-center">
+        <h1 class="title">A CRM dashboard for engineering teams</h1>
+        <h2 class="text-[#8F9BB7] max-w-[800px]">Rorem ipsum dolor sit amet consectetur. Gravida convallis orci ultrices
+            non. Ultricies
+            tempor at ut cursus
+            mi. Aliquam sed amet vitae orci ac penatibus consectetur.</h2>
+        <div class="flex gap-6">
+            <button class="flex">
+                <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Get a demo</a>
+            </button>
+            <button class="flex">
+                <a href="" class="px-6 py-3 text-white rounded-full bg-[#151934] border-slate-500 border">View
+                    pricing</a>
+            </button>
         </div>
+        <img src="/images/hero-image.png" alt="hero" class="mt-4">
     </section>
     <script type="module" src="/assets/js/main.js"></script>
 </body>
