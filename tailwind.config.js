@@ -7,14 +7,15 @@ module.exports = {
       colors: {
         "dark-blue": "#060B27",
         accent: "#7214FF",
-        //add your own color
-        //https://tailwindcss.com/docs/customizing-colors
       },
       fontFamily: {
         satoshi: ["Satoshi", "cursive"],
       },
       container: {
         center: true,
+        screens: {
+          xl: "1224px",
+        },
       },
     },
   },

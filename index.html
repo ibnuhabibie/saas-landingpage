@@ -6,35 +6,39 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TailwindCSS Boilerplate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 
-<body class="bg-dark-blue h-screen">
-    <header class="container flex justify-between items-center h-[96px]">
-        <img src="/images/logo.png" alt="logo">
-        <nav>
-            <ul class="flex gap-8">
-                <li>
-                    <a href="" class="text-white">Home</a>
-                </li>
-                <li>
-                    <a href="" class="text-slate-500">About</a>
-                </li>
-                <li>
-                    <a href="" class="text-slate-500">Features</a>
-                </li>
-                <li>
-                    <a href="" class="text-slate-500">Pricing</a>
-                </li>
-                <li>
-                    <a href="" class="text-slate-500">Blog</a>
-                </li>
-            </ul>
-        </nav>
-        <button>
-            <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Get a demo</a>
-        </button>
+<body class="bg-dark-blue">
+    <header class="border-b border-[#151934]">
+        <div class="container flex justify-between items-center h-[96px]">
+            <img src="/images/logo.png" alt="logo">
+            <nav>
+                <ul class="flex gap-8">
+                    <li>
+                        <a href="" class="text-white">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-slate-500 hover:text-white">About</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-slate-500 hover:text-white">Features</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-slate-500 hover:text-white">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-slate-500 hover:text-white">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <button>
+                <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Get a demo</a>
+            </button>
+        </div>
     </header>
-    <section class="text-center py-16 flex flex-col gap-8 items-center">
+    <section class="text-center py-16 flex flex-col gap-8 items-center bg-cover"
+        style="background-image: url('/images/hero-bg.png ');">
         <h1 class="title">A CRM dashboard for engineering teams</h1>
         <h2 class="text-[#8F9BB7] max-w-[800px]">Rorem ipsum dolor sit amet consectetur. Gravida convallis orci ultrices
             non. Ultricies
@@ -45,12 +49,467 @@
                 <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Get a demo</a>
             </button>
             <button class="flex">
-                <a href="" class="px-6 py-3 text-white rounded-full bg-[#151934] border-slate-500 border">View
+                <a href="" class="px-6 py-3 text-slate-300 rounded-full bg-[#151934] border-[#282D45] border">View
                     pricing</a>
             </button>
         </div>
         <img src="/images/hero-image.png" alt="hero" class="mt-4">
     </section>
+    <section class="container py-16">
+        <div class="flex items-center mb-16">
+            <h2 class="w-8/12 title !text-[56px] leading-[4.6rem] pr-16">
+                Powerful features to help you manage all your leads
+            </h2>
+            <p class="w-4/12 text-slate-500">Apsum dolor sit amet consectetur. Aliquam elementum elementum in ultrices.
+                Dui maecenas ut eros turpis ultrices metus morbi aliquet vel.</p>
+        </div>
+        <div class="grid grid-cols-3 text-white gap-4">
+            <div class="p-6 flex gap-2 flex-col bg-[#0E1330] border-slate-800 rounded border">
+                <img src="/images/icons/icon-user-information.png" alt="user information" class="w-fit mb-2">
+                <p class="text-xl">User Information</p>
+                <small class="text-slate-500">Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et
+                    amet arcu dictum
+                    ultricies convallis.</small>
+            </div>
+            <div class="p-6 flex gap-2 flex-col bg-[#0E1330] border-slate-800 rounded border">
+                <img src="/images/icons/icon-deal-tracking.png" alt="user information" class="w-fit mb-2">
+                <p class="text-xl">Deal tracking</p>
+                <small class="text-slate-500">Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et
+                    amet arcu dictum
+                    ultricies convallis.</small>
+            </div>
+            <div class="p-6 flex gap-2 flex-col bg-[#0E1330] border-slate-800 rounded border">
+                <img src="/images/icons/icon-pipeline-management.png" alt="user information" class="w-fit mb-2">
+                <p class="text-xl">Pipeline management</p>
+                <small class="text-slate-500">Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et
+                    amet arcu dictum
+                    ultricies convallis.</small>
+            </div>
+            <div class="p-6 flex gap-2 flex-col bg-[#0E1330] border-slate-800 rounded border">
+                <img src="/images/icons/icon-reporting-dashboard.png" alt="user information" class="w-fit mb-2">
+                <p class="text-xl">Reporting dashboard</p>
+                <small class="text-slate-500">Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et
+                    amet arcu dictum
+                    ultricies convallis.</small>
+            </div>
+            <div class="p-6 flex gap-2 flex-col bg-[#0E1330] border-slate-800 rounded border">
+                <img src="/images/icons/icon-meeting-scheduling.png" alt="user information" class="w-fit mb-2">
+                <p class="text-xl">Meeting scheduling</p>
+                <small class="text-slate-500">Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et
+                    amet arcu dictum
+                    ultricies convallis.</small>
+            </div>
+            <div class="p-6 flex gap-2 flex-col bg-[#0E1330] border-slate-800 rounded border">
+                <img src="/images/icons/icon-email-tracking.png" alt="user information" class="w-fit mb-2">
+                <p class="text-xl">Email tracking</p>
+                <small class="text-slate-500">Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et
+                    amet arcu dictum
+                    ultricies convallis.</small>
+            </div>
+        </div>
+    </section>
+    <section class="container py-16">
+        <h2 class="title text-center !text-[56px]">Essential apps that protect your</h2>
+        <div class="flex justify-center items-center gap-4">
+            <img src="/images/icons/icon-email.png" class="w-fit h-fit">
+            <h3 class="title !text-[48px]">Email,</h3>
+            <img src="/images/icons/icon-events.png" class="w-fit h-fit">
+            <h3 class="title !text-[48px]">Events,</h3>
+            <img src="/images/icons/icon-files.png" class="w-fit h-fit">
+            <h3 class="title !text-[48px]">Files,</h3>
+            <img src="/images/icons/icon-documents.png" class="w-fit h-fit">
+            <h3 class="title !text-[48px]">Documents</h3>
+        </div>
+        <div class="bg-[#0E1330] border border-[#282D45] mt-14 grid grid-cols-2 p-16 items-center rounded-lg"
+            style="background-image: url('/images/demo-bg.png');">
+            <div class="flex flex-col gap-4">
+                <p class="text-white text-3xl font-bold">End-to-end encrypted inbox and messages</p>
+                <small class="text-slate-400 w-9/12">Rorem ipsum dolor sit amet consectetur. Proin dignissim tortor
+                    mauris
+                    viverra sed volutpat mauris. Amet nisi amet commodo adipiscing ut imperdiet nunc.</small>
+                <button class="flex">
+                    <a href="" class="px-6 py-2 text-slate-300 rounded-full bg-[#151934] border-[#282D45] border">Learn
+                        More</a>
+                </button>
+            </div>
+            <img src="/images/demo-1.png" alt="demo 1">
+        </div>
+        <div class="flex gap-8">
+            <div class="bg-[#0E1330] border border-[#282D45] mt-10  p-12 items-center rounded-lg w-5/12 bg-cover"
+                style="background-image: url('/images/demo2-bg.png');">
+                <div class="flex flex-col gap-4">
+                    <img src="/images/demo-2.png" alt="demo 2" class="w-fit mx-auto">
+                    <p class="text-white text-3xl font-bold">Mobile applications</p>
+                    <small class="text-slate-400">Rorem ipsum dolor sit amet consectetur. Proin dignissim tortor
+                        mauris
+                        viverra sed volutpat mauris. Amet nisi amet commodo adipiscing ut imperdiet nunc.</small>
+                </div>
+            </div>
+            <div class="bg-[#0E1330] border border-[#282D45] mt-10  px-12 pt-12 items-center rounded-lg w-7/12 bg-cover"
+                style="background-image: url('/images/demo3-bg.png');">
+                <div class="flex flex-col gap-6">
+                    <p class="text-white text-3xl font-bold">Upload, share, and preview any file</p>
+                    <small class="text-slate-400">Tellus et adipiscing sit sit mauris pharetra bibendum. Ligula massa
+                        netus nulla ultricies purus.</small>
+                    <img src="/images/demo-3.png" alt="demo 2" class="w-fit mx-auto">
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-6 justify-center mt-12">
+            <button class="flex">
+                <a href="" class="px-6 py-2 text-white rounded-full bg-accent">Get a Started</a>
+            </button>
+            <button class="flex">
+                <a href="" class="px-6 py-2 text-slate-300 rounded-full bg-[#151934] border-[#282D45] border">Browse all
+                    feature</a>
+            </button>
+        </div>
+    </section>
+    <section class="container p-12 bg-[#0E1330] border border-[#282D45] rounded-md mb-12">
+        <div class="flex items-center gap-8">
+            <div class="w-1/2 flex gap-4 flex-col">
+                <h2 class="title !text-[48px] leading-[4rem]">Transparent, audited, &open source</h2>
+                <p class="text-slate-500 w-10/12">Torem ipsum dolor sit amet consectetur. Nulla quisque scelerisque eget
+                    quis.
+                    Eu amet amet eu interdum.</p>
+                <button class="flex mt-4">
+                    <a href="" class="px-6 py-2 text-slate-300 rounded-full bg-[#151934] border-[#282D45] border">
+                        Browse all feature
+                    </a>
+                </button>
+            </div>
+            <div class="w-1/2">
+                <img src="/images/demo-4.png" alt="demo 4">
+            </div>
+        </div>
+        <div class="flex gap-8">
+            <div class="bg-[#060B27] border border-[#282D45] mt-10  px-12 pt-12 items-center rounded-lg w-1/2">
+                <div class="flex flex-col gap-4">
+                    <p class="text-white text-3xl font-bold">Product Mail</p>
+                    <small class="text-slate-500">
+                        Gonsectetur eque nec nunc facilisis tellus tincidunt. Malesuada maecenas ac bibendum
+                        consectetur.
+                    </small>
+                    <img src="/images/demo-5.png" alt="demo 5" class="w-fit mx-auto mt-3">
+                </div>
+            </div>
+            <div class="bg-[#060B27] border border-[#282D45] mt-10  px-12 pt-12 items-center rounded-lg w-1/2">
+                <div class="flex flex-col gap-4">
+                    <p class="text-white text-3xl font-bold">Product UI</p>
+                    <small class="text-slate-500">
+                        Honsectetur eque nec nunc facilisis tellus tincidunt. Malesuada maecenas ac bibendum
+                        consectetur.
+                    </small>
+                    <img src="/images/demo-6.png" alt="demo 6" class="w-fit mx-auto mt-3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container py-16">
+        <div class="flex flex-col items-center gap-4 text-center">
+            <h2 class="title !text-[56px] leading-[4.6rem] pr-16">
+                What our clients say
+            </h2>
+            <p class="text-slate-500 w-7/12">
+                Rmet facilisi arcu odio urna aenean erat. Pellentesque in vitae lobortis orci tincidunt facilisis.
+                Pulvinar lacus ultricies turpis urna sapien.
+            </p>
+        </div>
+        <div class="slider text-white py-16">
+            <div class="w-4/12 relative h-[200px]">
+                <div
+                    class="bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2 items-center">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/d7/d7a4f9478ba06b31fd6802218a7b33a00313465d_full.jpg"
+                                class="w-[40px] rounded-md">
+                            <div class="flex flex-col">
+                                <p class="text-white font-bold">Cameron Williamson</p>
+                                <small class="text-slate-500">Web Designer</small>
+                            </div>
+                        </div>
+                        <img src="/images/icons/icon-quote.png" alt="icon quote">
+                    </div>
+                    <p class="text-slate-400 mt-3 text-md">
+                        Rorem ipsum dolor sit amet consectetur. Ac quam sem mi nibh volutpat enim pellentesque. Proin
+                        iaculis nisl et neque sed fermentum sollicitudin lectus.
+                    </p>
+                </div>
+                <img class="h-[100px] absolute -bottom-2 w-11/12 left-1/2 -translate-x-1/2"
+                    src="/images/testi-bg.png" />
+            </div>
+            <div class="w-4/12 relative h-[200px]">
+                <div
+                    class="bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2 items-center">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/00/003044be29c31148f713e22ce0d7b0114aff3cac_full.jpg"
+                                class="w-[40px] rounded-md">
+                            <div class="flex flex-col">
+                                <p class="text-white font-bold">Esther Howard</p>
+                                <small class="text-slate-500">Web Designer</small>
+                            </div>
+                        </div>
+                        <img src="/images/icons/icon-quote.png" alt="icon quote">
+                    </div>
+                    <p class="text-slate-400 mt-3 text-md">
+                        At viverra enim enim sed turpis orci cursus. Imperdiet eros mauris sed sodales nisi interdum ac.
+                        Eu congue quis egestas donec lectus
+                    </p>
+                </div>
+                <img class="h-[100px] absolute -bottom-2 w-11/12 left-1/2 -translate-x-1/2"
+                    src="/images/testi-bg2.png" />
+            </div>
+            <div class="w-4/12 relative h-[200px]">
+                <div
+                    class="bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2 items-center">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/00/00302e3298d0df7253b0a4fe4081562c5a47999a_full.jpg"
+                                class="w-[40px] rounded-md">
+                            <div class="flex flex-col">
+                                <p class="text-white font-bold">Jenny Wilson</p>
+                                <small class="text-slate-500">UI/UX Designer</small>
+                            </div>
+                        </div>
+                        <img src="/images/icons/icon-quote.png" alt="icon quote">
+                    </div>
+                    <p class="text-slate-400 mt-3 text-md">
+                        Sed ut diam amet accumsan in. Elementum lorem aliquam venenatis amet sit posuere sed sit.
+                        Aliquet suspendisse vitae placerat donec.
+                    </p>
+                </div>
+                <img class="h-[100px] absolute -bottom-2 w-11/12 left-1/2 -translate-x-1/2"
+                    src="/images/testi-bg3.png" />
+            </div>
+            <div class="w-4/12 relative h-[200px]">
+                <div
+                    class="bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2 items-center">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/4e/4ecf24c30611dd3f92b023755149bd767085c45a_full.jpg"
+                                class="w-[40px] rounded-md">
+                            <div class="flex flex-col">
+                                <p class="text-white font-bold">Ibnu Habibie</p>
+                                <small class="text-slate-500">App Developer</small>
+                            </div>
+                        </div>
+                        <img src="/images/icons/icon-quote.png" alt="icon quote">
+                    </div>
+                    <p class="text-slate-400 mt-3 text-md">
+                        Ac quam sem mi nibh volutpat enim pellentesque. Proin iaculis nisl et neque sed fermentum
+                        sollicitudin lectus. Rorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+                <img class="h-[100px] absolute -bottom-2 w-11/12 left-1/2 -translate-x-1/2"
+                    src="/images/testi-bg2.png" />
+            </div>
+        </div>
+        <ul class="flex justify-center gap-3" id="customize-controls">
+            <li class="bg-[#0E1330] border border-[#282D45] p-2 rounded-lg prev">
+                <img src="/images/icons/icon-arrow-left.png" alt="">
+            </li>
+            <li class="bg-[#0E1330] border border-[#282D45] p-2 rounded-lg next">
+                <img src="/images/icons/icon-arrow-right.png" alt="">
+            </li>
+        </ul>
+
+    </section>
+    <section class="container py-16">
+        <div class="flex flex-col items-center justify-center w-10/12 bg-cover h-[450px] mx-auto border-[#282D45] border rounded-xl bg-[#0E1330] gap-3"
+            style="background-image: url('/images/bg-community.png');">
+            <img src="/images/icons/icon-discord.png" alt="icon discord">
+            <h3 class="text-white text-3xl">Join the community</h3>
+            <p class="w-8/12 text-center text-slate-500 text-xl">
+                oin our 400,000+ person community and contribute to a more private and decentralized internet. Start for
+                free.
+            </p>
+            <button class="flex mt-4">
+                <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Join Discord</a>
+            </button>
+            <img src="/images/shape-community.png" alt="bg shape" class="absolute bottpm-0">
+        </div>
+    </section>
+    <section class="container py-16">
+        <div class="flex justify-between">
+            <h1 class="title">Product in the news</h1>
+            <button class="flex mt-4">
+                <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Browse all news</a>
+            </button>
+        </div>
+        <div class="grid grid-cols-3 gap-4 mt-12">
+            <div class="border border-[#282D45] p-6 rounded-md bg-[#0E1330]">
+                <div class="flex flex-col gap-3">
+                    <img src="/images/news/thumbnail1.png" alt="thumbnail 1">
+                    <h6 class="text-white text-xl">
+                        Product Mail is taking on Gmail by betting on privacy
+                    </h6>
+                    <p class="text-slate-500 text-sm">
+                        Ramet consectetur. Est porttitor mattis pharetra sit id viverra. Vivamus cras turpis faucibus
+                        elit urna.
+                    </p>
+                    <div class="h-[1px] border border-[#282D45]"></div>
+                    <div class="flex justify-between">
+                        <small class="text-slate-500">February 8, 2023</small>
+                        <a href="" class="text-white text-sm flex gap-1 items-center">
+                            <span>Read More</span>
+                            <img src="/images/icons/icon-more.png" alt="icon more">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-[#282D45] p-6 rounded-md bg-[#0E1330]">
+                <div class="flex flex-col gap-3">
+                    <img src="/images/news/thumbnail2.png" alt="thumbnail 2">
+                    <h6 class="text-white text-xl">
+                        Wants You To Sign Out Of Google Workspace Forever
+                    </h6>
+                    <p class="text-slate-500 text-sm">
+                        Est porttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus
+                        elit urna.
+                    </p>
+                    <div class="h-[1px] border border-[#282D45]"></div>
+                    <div class="flex justify-between">
+                        <small class="text-slate-500">February 8, 2023</small>
+                        <a href="" class="text-white text-sm flex gap-1 items-center">
+                            <span>Read More</span>
+                            <img src="/images/icons/icon-more.png" alt="icon more">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-[#282D45] p-6 rounded-md bg-[#0E1330]">
+                <div class="flex flex-col gap-3">
+                    <img src="/images/news/thumbnail3.png" alt="thumbnail 3">
+                    <h6 class="text-white text-xl">
+                        The Best Email Encryption Services for 2023
+                    </h6>
+                    <p class="text-slate-500 text-sm">
+                        Dorttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus
+                        elit urna.
+                    </p>
+                    <div class="h-[1px] border border-[#282D45]"></div>
+                    <div class="flex justify-between">
+                        <small class="text-slate-500">February 8, 2023</small>
+                        <a href="" class="text-white text-sm flex gap-1 items-center">
+                            <span>Read More</span>
+                            <img src="/images/icons/icon-more.png" alt="icon more">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#060B27] bg-cover" style="background-image: url('/images/bg-footer.png');">
+        <div class="container">
+            <div class="flex py-12">
+                <div class="w-5/12 flex flex-col gap-6">
+                    <a href="">
+                        <img src="/images/logo.png" alt="logo">
+                    </a>
+                    <div
+                        class="flex flex-col gap-4 bg-[#0E133] border border-[#282D45] rounded-md p-10 bg-[#0E1330] w-10/12">
+                        <p class="text-white text-2xl">Subscribe to our newsletter</p>
+                        <input type="email" name="email"
+                            class="border border-[#282D45] rounded-full bg-[#0E1330] py-2 px-6 text-sm text-slate-500"
+                            placeholder="Enter your email">
+                        <button class="flex w-full">
+                            <a href="" class="w-full py-2 text-sm text-white rounded-full bg-accent">Subscribe</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex w-7/12 font-satoshi text-slate-400 justify-around">
+                    <div class="flex flex-col">
+                        <p class="text-lg font-semibold h-12">Pages</p>
+                        <ul class="flex flex-col gap-4">
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">About</a>
+                            </li>
+                            <li>
+                                <a href="">Contact</a>
+                            </li>
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="">Blog post</a>
+                            </li>
+                            <li>
+                                <a href="">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="">Pricing single</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="flex flex-col gap-4 mt-12">
+                        <li>
+                            <a href="">Features</a>
+                        </li>
+                        <li>
+                            <a href="">Careers</a>
+                        </li>
+                        <li>
+                            <a href="">Careers single</a>
+                        </li>
+                        <li>
+                            <a href="">Request a demo</a>
+                        </li>
+                        <li>
+                            <a href="">Login</a>
+                        </li>
+                        <li>
+                            <a href="">Sign Up</a>
+                        </li>
+                    </ul>
+                    <div class="flex flex-col">
+                        <p class="text-lg font-semibold h-12">Utility Pages</p>
+                        <ul class="flex flex-col gap-4">
+                            <li>
+                                <a href="">Style guide</a>
+                            </li>
+                            <li>
+                                <a href="">Password protected</a>
+                            </li>
+                            <li>
+                                <a href="">404 Not found</a>
+                            </li>
+                            <li>
+                                <a href="">Licenses</a>
+                            </li>
+                            <li>
+                                <a href="">Changelog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between border-t py-6 border-[#282D45] items-center">
+                <p class="text-slate-500">
+                    Copyright © Product | Designed by <a href="" class="text-white">Webocean LTD</a> - Powered by <a
+                        href="" class="text-white">Webflow</a>
+                </p>
+                <div class="flex gap-2">
+                    <a href="" class="border border-[#282D45] rounded-md p-2">
+                        <img src="/images/icons/icon-fb.png" alt="icon fb" class="w-4">
+                    </a>
+                    <a href="" class="border border-[#282D45] rounded-md p-2">
+                        <img src="/images/icons/icon-twitter.png" alt="icon twitter" class="w-4">
+                    </a>
+                    <a href="" class="border border-[#282D45] rounded-md p-2">
+                        <img src="/images/icons/icon-linkedin.png" alt="icon linkedin" class="w-4">
+                    </a>
+                    <a href="" class="border border-[#282D45] rounded-md p-2">
+                        <img src="/images/icons/icon-ig.png" alt="icon ig" class="w-4">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="module" src="/assets/js/main.js"></script>
 </body>
 

@@ -9,5 +9,5 @@
 
 .title {
   @apply font-satoshi text-[64px] text-transparent bg-clip-text bg-gradient-to-b from-slate-50 to-slate-500 font-bold;
-  -webkit-text-stroke: 1px black;
+  /* -webkit-text-stroke: 1px black; */
 }
