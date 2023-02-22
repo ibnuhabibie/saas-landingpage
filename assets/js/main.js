@@ -24,6 +24,18 @@ function setupSlider() {
   }
 }
 
+let nav = document.getElementsByTagName("nav");
+
+let showNav = document.getElementById("showNav");
+showNav.onclick = function () {
+  nav[0].style.display = "flex";
+};
+
+let hideNav = document.getElementById("hideNav");
+hideNav.onclick = function () {
+  nav[0].style = "";
+};
+
 setupSlider();
 
 window.onresize = setupSlider;

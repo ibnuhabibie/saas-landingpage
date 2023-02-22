@@ -13,8 +13,8 @@
     <header class="border-b border-[#151934]">
         <div class="container flex justify-between items-center h-[96px]">
             <img src="/images/logo.png" alt="logo">
-            <nav class="lg:hidden">
-                <ul class="flex gap-8">
+            <nav class="block lg:top-0 lg:left-0 lg:bg-black lg:fixed lg:bg-opacity-95 lg:w-full lg:hidden">
+                <ul class="flex gap-8 lg:w-full lg:h-screen lg:flex-col lg:text-center lg:text-4xl lg:justify-center">
                     <li>
                         <a href="" class="text-white">Home</a>
                     </li>
@@ -31,10 +31,20 @@
                         <a href="" class="text-slate-500 hover:text-white">Blog</a>
                     </li>
                 </ul>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="hidden h-12 w-12 text-white absolute top-6 right-2 lg:block" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" id="hideNav">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
             </nav>
             <button class="lg:hidden">
                 <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Get a demo</a>
             </button>
+            <svg class="hidden text-slate-400 hover:text-white h-10 w-10 lg:block" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" id="showNav">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
         </div>
     </header>
     <section class="py-16 bg-cover" style="background-image: url('/images/hero-bg.png ');">
