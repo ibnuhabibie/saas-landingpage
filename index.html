@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TailwindCSS Boilerplate</title>
+    <title>Saas Landing Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 
@@ -13,7 +13,7 @@
     <header class="border-b border-[#151934]">
         <div class="container flex justify-between items-center h-[96px]">
             <img src="/images/logo.png" alt="logo">
-            <nav>
+            <nav class="lg:hidden">
                 <ul class="flex gap-8">
                     <li>
                         <a href="" class="text-white">Home</a>
@@ -32,38 +32,41 @@
                     </li>
                 </ul>
             </nav>
-            <button>
+            <button class="lg:hidden">
                 <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Get a demo</a>
             </button>
         </div>
     </header>
-    <section class="text-center py-16 flex flex-col gap-8 items-center bg-cover"
-        style="background-image: url('/images/hero-bg.png ');">
-        <h1 class="title">A CRM dashboard for engineering teams</h1>
-        <h2 class="text-[#8F9BB7] max-w-[800px]">Rorem ipsum dolor sit amet consectetur. Gravida convallis orci ultrices
-            non. Ultricies
-            tempor at ut cursus
-            mi. Aliquam sed amet vitae orci ac penatibus consectetur.</h2>
-        <div class="flex gap-6">
-            <button class="flex">
-                <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Get a demo</a>
-            </button>
-            <button class="flex">
-                <a href="" class="px-6 py-3 text-slate-300 rounded-full bg-[#151934] border-[#282D45] border">View
-                    pricing</a>
-            </button>
+    <section class="py-16 bg-cover" style="background-image: url('/images/hero-bg.png ');">
+        <div class="container flex flex-col gap-8 items-center text-center lg:gap-4">
+            <h1 class="title">A CRM dashboard for engineering teams</h1>
+            <h2 class="text-[#8F9BB7] max-w-[800px]">Rorem ipsum dolor sit amet consectetur. Gravida convallis orci
+                ultrices
+                non. Ultricies
+                tempor at ut cursus
+                mi. Aliquam sed amet vitae orci ac penatibus consectetur.</h2>
+            <div class="flex gap-6">
+                <button class="flex">
+                    <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Get a demo</a>
+                </button>
+                <button class="flex">
+                    <a href="" class="px-6 py-3 text-slate-300 rounded-full bg-[#151934] border-[#282D45] border">View
+                        pricing</a>
+                </button>
+            </div>
+            <img src="/images/hero-image.png" alt="hero" class="mt-4">
         </div>
-        <img src="/images/hero-image.png" alt="hero" class="mt-4">
     </section>
     <section class="container py-16">
-        <div class="flex items-center mb-16">
-            <h2 class="w-8/12 title !text-[56px] leading-[4.6rem] pr-16">
+        <div class="flex items-center mb-16 lg:flex-col lg:items-start lg:gap-4">
+            <h2 class="w-8/12 title !text-[56px] leading-[4.6rem] pr-16 lg:w-full lg:!text-4xl lg:leading-10">
                 Powerful features to help you manage all your leads
             </h2>
-            <p class="w-4/12 text-slate-500">Apsum dolor sit amet consectetur. Aliquam elementum elementum in ultrices.
+            <p class="w-4/12 text-slate-500 lg:w-full">Apsum dolor sit amet consectetur. Aliquam elementum elementum in
+                ultrices.
                 Dui maecenas ut eros turpis ultrices metus morbi aliquet vel.</p>
         </div>
-        <div class="grid grid-cols-3 text-white gap-4">
+        <div class="grid grid-cols-3 text-white gap-4 lg:grid-cols-2 lg:gap-2 md:grid-cols-1">
             <div class="p-6 flex gap-2 flex-col bg-[#0E1330] border-slate-800 rounded border">
                 <img src="/images/icons/icon-user-information.png" alt="user information" class="w-fit mb-2">
                 <p class="text-xl">User Information</p>
@@ -109,33 +112,34 @@
         </div>
     </section>
     <section class="container py-16">
-        <h2 class="title text-center !text-[56px]">Essential apps that protect your</h2>
-        <div class="flex justify-center items-center gap-4">
+        <h2 class="title text-center !text-[56px] lg:!text-4xl lg:mb-4">Essential apps that protect your</h2>
+        <div class="flex justify-center items-center gap-4 lg:flex-wrap">
             <img src="/images/icons/icon-email.png" class="w-fit h-fit">
-            <h3 class="title !text-[48px]">Email,</h3>
+            <h3 class="title !text-[48px] lg:!text-3xl">Email,</h3>
             <img src="/images/icons/icon-events.png" class="w-fit h-fit">
-            <h3 class="title !text-[48px]">Events,</h3>
+            <h3 class="title !text-[48px] lg:!text-3xl">Events,</h3>
             <img src="/images/icons/icon-files.png" class="w-fit h-fit">
-            <h3 class="title !text-[48px]">Files,</h3>
+            <h3 class="title !text-[48px] lg:!text-3xl">Files,</h3>
             <img src="/images/icons/icon-documents.png" class="w-fit h-fit">
-            <h3 class="title !text-[48px]">Documents</h3>
+            <h3 class="title !text-[48px] lg:!text-3xl">Documents</h3>
         </div>
-        <div class="bg-[#0E1330] border border-[#282D45] mt-14 grid grid-cols-2 p-16 items-center rounded-lg"
+        <div class="bg-[#0E1330] border border-[#282D45] mt-14 grid grid-cols-2 p-16 items-center rounded-l lg:flex lg:flex-col-reverse lg:gap-4"
             style="background-image: url('/images/demo-bg.png');">
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 lg:text-center">
                 <p class="text-white text-3xl font-bold">End-to-end encrypted inbox and messages</p>
-                <small class="text-slate-400 w-9/12">Rorem ipsum dolor sit amet consectetur. Proin dignissim tortor
+                <small class="text-slate-400 w-9/12 lg:w-full">Rorem ipsum dolor sit amet consectetur. Proin dignissim
+                    tortor
                     mauris
                     viverra sed volutpat mauris. Amet nisi amet commodo adipiscing ut imperdiet nunc.</small>
-                <button class="flex">
+                <button class="flex lg:mx-auto">
                     <a href="" class="px-6 py-2 text-slate-300 rounded-full bg-[#151934] border-[#282D45] border">Learn
                         More</a>
                 </button>
             </div>
             <img src="/images/demo-1.png" alt="demo 1">
         </div>
-        <div class="flex gap-8">
-            <div class="bg-[#0E1330] border border-[#282D45] mt-10  p-12 items-center rounded-lg w-5/12 bg-cover"
+        <div class="flex gap-8 lg:gap-4 mt-10 lg:mt-5 md:flex-col">
+            <div class="bg-[#0E1330] border border-[#282D45] p-12 items-center rounded-lg w-5/12 bg-cover md:w-full md:text-center"
                 style="background-image: url('/images/demo2-bg.png');">
                 <div class="flex flex-col gap-4">
                     <img src="/images/demo-2.png" alt="demo 2" class="w-fit mx-auto">
@@ -145,7 +149,7 @@
                         viverra sed volutpat mauris. Amet nisi amet commodo adipiscing ut imperdiet nunc.</small>
                 </div>
             </div>
-            <div class="bg-[#0E1330] border border-[#282D45] mt-10  px-12 pt-12 items-center rounded-lg w-7/12 bg-cover"
+            <div class="bg-[#0E1330] border border-[#282D45] px-12 pt-12 items-center rounded-lg w-7/12 bg-cover md:w-full md:text-center"
                 style="background-image: url('/images/demo3-bg.png');">
                 <div class="flex flex-col gap-6">
                     <p class="text-white text-3xl font-bold">Upload, share, and preview any file</p>
@@ -165,25 +169,26 @@
             </button>
         </div>
     </section>
-    <section class="container p-12 bg-[#0E1330] border border-[#282D45] rounded-md mb-12">
-        <div class="flex items-center gap-8">
-            <div class="w-1/2 flex gap-4 flex-col">
+    <section class="container p-12 bg-[#0E1330] border border-[#282D45] rounded-md mb-12 lg:p-6">
+        <div class="flex items-center gap-8 lg:flex-col-reverse">
+            <div class="w-1/2 flex gap-4 flex-col lg:w-full lg:text-center">
                 <h2 class="title !text-[48px] leading-[4rem]">Transparent, audited, &open source</h2>
                 <p class="text-slate-500 w-10/12">Torem ipsum dolor sit amet consectetur. Nulla quisque scelerisque eget
                     quis.
                     Eu amet amet eu interdum.</p>
-                <button class="flex mt-4">
+                <button class="flex mt-4 lg:mx-auto">
                     <a href="" class="px-6 py-2 text-slate-300 rounded-full bg-[#151934] border-[#282D45] border">
                         Browse all feature
                     </a>
                 </button>
             </div>
-            <div class="w-1/2">
-                <img src="/images/demo-4.png" alt="demo 4">
+            <div class="w-1/2 lg:w-full">
+                <img src="/images/demo-4.png" alt="demo 4" class="lg:mx-auto">
             </div>
         </div>
-        <div class="flex gap-8">
-            <div class="bg-[#060B27] border border-[#282D45] mt-10  px-12 pt-12 items-center rounded-lg w-1/2">
+        <div class="flex gap-8 lg:flex-col lg:gap-2">
+            <div
+                class="bg-[#060B27] border border-[#282D45] mt-10  px-12 pt-12 items-center rounded-lg w-1/2 lg:w-full">
                 <div class="flex flex-col gap-4">
                     <p class="text-white text-3xl font-bold">Product Mail</p>
                     <small class="text-slate-500">
@@ -193,7 +198,8 @@
                     <img src="/images/demo-5.png" alt="demo 5" class="w-fit mx-auto mt-3">
                 </div>
             </div>
-            <div class="bg-[#060B27] border border-[#282D45] mt-10  px-12 pt-12 items-center rounded-lg w-1/2">
+            <div
+                class="bg-[#060B27] border border-[#282D45] mt-10  px-12 pt-12 items-center rounded-lg w-1/2 lg:w-full lg:mt-2">
                 <div class="flex flex-col gap-4">
                     <p class="text-white text-3xl font-bold">Product UI</p>
                     <small class="text-slate-500">
@@ -207,18 +213,18 @@
     </section>
     <section class="container py-16">
         <div class="flex flex-col items-center gap-4 text-center">
-            <h2 class="title !text-[56px] leading-[4.6rem] pr-16">
+            <h2 class="title !text-[56px] leading-[4.6rem] pr-16 lg:pr-0">
                 What our clients say
             </h2>
-            <p class="text-slate-500 w-7/12">
+            <p class="text-slate-500 w-7/12 lg:w-full">
                 Rmet facilisi arcu odio urna aenean erat. Pellentesque in vitae lobortis orci tincidunt facilisis.
                 Pulvinar lacus ultricies turpis urna sapien.
             </p>
         </div>
         <div class="slider text-white py-16">
-            <div class="w-4/12 relative h-[200px]">
+            <div class="relative h-[200px] md:h-[220px]">
                 <div
-                    class="bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
+                    class="slider-header bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
                     <div class="flex justify-between items-center">
                         <div class="flex gap-2 items-center">
                             <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/d7/d7a4f9478ba06b31fd6802218a7b33a00313465d_full.jpg"
@@ -238,9 +244,9 @@
                 <img class="h-[100px] absolute -bottom-2 w-11/12 left-1/2 -translate-x-1/2"
                     src="/images/testi-bg.png" />
             </div>
-            <div class="w-4/12 relative h-[200px]">
+            <div class="relative h-[200px] md:h-[220px]">
                 <div
-                    class="bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
+                    class="slider-header bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
                     <div class="flex justify-between items-center">
                         <div class="flex gap-2 items-center">
                             <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/00/003044be29c31148f713e22ce0d7b0114aff3cac_full.jpg"
@@ -260,9 +266,9 @@
                 <img class="h-[100px] absolute -bottom-2 w-11/12 left-1/2 -translate-x-1/2"
                     src="/images/testi-bg2.png" />
             </div>
-            <div class="w-4/12 relative h-[200px]">
+            <div class="relative h-[200px] md:h-[220px]">
                 <div
-                    class="bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
+                    class="slider-header bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
                     <div class="flex justify-between items-center">
                         <div class="flex gap-2 items-center">
                             <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/00/00302e3298d0df7253b0a4fe4081562c5a47999a_full.jpg"
@@ -282,9 +288,9 @@
                 <img class="h-[100px] absolute -bottom-2 w-11/12 left-1/2 -translate-x-1/2"
                     src="/images/testi-bg3.png" />
             </div>
-            <div class="w-4/12 relative h-[200px]">
+            <div class="relative h-[200px] md:h-[220px]">
                 <div
-                    class="bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
+                    class="slider-header bg-[#0E1330] border border-[#282D45] rounded-lg p-4 absolute left-1/2 -translate-x-1/2 w-10/12 z-10">
                     <div class="flex justify-between items-center">
                         <div class="flex gap-2 items-center">
                             <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/4e/4ecf24c30611dd3f92b023755149bd767085c45a_full.jpg"
@@ -306,38 +312,38 @@
             </div>
         </div>
         <ul class="flex justify-center gap-3" id="customize-controls">
-            <li class="bg-[#0E1330] border border-[#282D45] p-2 rounded-lg prev">
-                <img src="/images/icons/icon-arrow-left.png" alt="">
+            <li class="bg-[#0E1330] border border-[#282D45] p-2 rounded-lg prev rotate-180">
+                <img src="/images/icons/icon-arrow-right.png" alt="">
             </li>
             <li class="bg-[#0E1330] border border-[#282D45] p-2 rounded-lg next">
                 <img src="/images/icons/icon-arrow-right.png" alt="">
             </li>
         </ul>
-
     </section>
     <section class="container py-16">
-        <div class="flex flex-col items-center justify-center w-10/12 bg-cover h-[450px] mx-auto border-[#282D45] border rounded-xl bg-[#0E1330] gap-3"
+        <div class="flex flex-col items-center justify-center w-10/12 bg-cover h-[450px] mx-auto border-[#282D45] border rounded-xl bg-[#0E1330] gap-3 overflow-hidden relative lg:w-full"
             style="background-image: url('/images/bg-community.png');">
             <img src="/images/icons/icon-discord.png" alt="icon discord">
             <h3 class="text-white text-3xl">Join the community</h3>
-            <p class="w-8/12 text-center text-slate-500 text-xl">
-                oin our 400,000+ person community and contribute to a more private and decentralized internet. Start for
+            <p class="w-8/12 text-center text-slate-500 text-xl lg:w-full">
+                Join our 400,000+ person community and contribute to a more private and decentralized internet. Start
+                for
                 free.
             </p>
             <button class="flex mt-4">
                 <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Join Discord</a>
             </button>
-            <img src="/images/shape-community.png" alt="bg shape" class="absolute bottpm-0">
+            <img src="/images/shape-community.png" alt="bg shape" class="absolute bottom-0">
         </div>
     </section>
     <section class="container py-16">
-        <div class="flex justify-between">
+        <div class="flex justify-between lg:flex-col lg:items-center lg:text-center">
             <h1 class="title">Product in the news</h1>
             <button class="flex mt-4">
                 <a href="" class="px-6 py-3 text-white rounded-full bg-accent">Browse all news</a>
             </button>
         </div>
-        <div class="grid grid-cols-3 gap-4 mt-12">
+        <div class="grid grid-cols-3 gap-4 mt-12 lg:grid-cols-2 lg:gap-2 md:grid-cols-1">
             <div class="border border-[#282D45] p-6 rounded-md bg-[#0E1330]">
                 <div class="flex flex-col gap-3">
                     <img src="/images/news/thumbnail1.png" alt="thumbnail 1">
@@ -403,7 +409,7 @@
     <footer class="bg-[#060B27] bg-cover" style="background-image: url('/images/bg-footer.png');">
         <div class="container">
             <div class="flex py-12">
-                <div class="w-5/12 flex flex-col gap-6">
+                <div class="w-5/12 flex flex-col gap-6 lg:w-full lg:items-center">
                     <a href="">
                         <img src="/images/logo.png" alt="logo">
                     </a>
@@ -418,7 +424,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="flex w-7/12 font-satoshi text-slate-400 justify-around">
+                <div class="flex w-7/12 font-satoshi text-slate-400 justify-around lg:hidden">
                     <div class="flex flex-col">
                         <p class="text-lg font-semibold h-12">Pages</p>
                         <ul class="flex flex-col gap-4">
@@ -487,8 +493,8 @@
                     </div>
                 </div>
             </div>
-            <div class="flex justify-between border-t py-6 border-[#282D45] items-center">
-                <p class="text-slate-500">
+            <div class="flex justify-between border-t py-6 border-[#282D45] items-center lg:flex-col lg:gap-4">
+                <p class="text-slate-500 lg:text-center">
                     Copyright © Product | Designed by <a href="" class="text-white">Webocean LTD</a> - Powered by <a
                         href="" class="text-white">Webflow</a>
                 </p>
